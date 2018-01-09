@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const config = require('./config')
 
 
 app.set('view engine', 'ejs');
@@ -12,7 +13,7 @@ app.get('/', (req, res) => {
     res.render('index');
 })
 
-server = app.listen(process.env.PORT || 3000, function(){
+server = app.listen(config.port, function(){
             console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
          });
 

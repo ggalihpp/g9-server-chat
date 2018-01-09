@@ -1,6 +1,5 @@
 $(function(){
-    var port = process.env.PORT || 3000;
-    var socket = io.connect('https://localhost:' + port);
+    var socket = io.connect('https://g9-chat-server.herokuapp.com/');
 
     // buttons and inputs
     var message = $("#message");
