@@ -1,5 +1,6 @@
 $(function(){
-    var socket = io.connect('https://g9-chat-server.herokuapp.com/');
+    // var socket = io.connect('https://g9-chat-server.herokuapp.com/');
+    var socket = io.connect('http://cdn.makersinstitute.id');
 
     // buttons and inputs
     var message = $("#message");
